@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Baye Modou Diop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Defar qr code</h2>
+
+    <input type="text" id="qrText" placeholder="Entrez un texte ou un lien">
+
+    <label>Couleur du QR Code</label>
+    <input type="color" id="qrColor" value="#000000">
+
+
+    <button onclick="generateQR()">Defar</button>
+    <button onclick="downloadQR()">Wàcce</button>
+
+    <div id="qrcode"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
